@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -4097,48 +4111,54 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="TCS2" library="Robotica-IFRN-SC-sensores" deviceset="TCS34725" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="OS5" library="Robotica-IFRN-SC-sensores" deviceset="TCRT5000" device=""/>
+<part name="OS6" library="Robotica-IFRN-SC-sensores" deviceset="TCRT5000" device=""/>
+<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="OS1" gate="OS" x="7.62" y="83.82" rot="R90"/>
+<instance part="OS1" gate="OS" x="-5.08" y="83.82" rot="R90"/>
 <instance part="OS2" gate="OS" x="38.1" y="83.82" rot="R90"/>
 <instance part="OS3" gate="OS" x="68.58" y="83.82" rot="R90"/>
-<instance part="OS4" gate="OS" x="99.06" y="83.82" rot="R90"/>
-<instance part="R1" gate="G$1" x="5.08" y="68.58" rot="R270"/>
+<instance part="OS4" gate="OS" x="119.38" y="83.82" rot="R90"/>
+<instance part="R1" gate="G$1" x="-7.62" y="68.58" rot="R270"/>
 <instance part="R2" gate="G$1" x="35.56" y="68.58" rot="R90"/>
 <instance part="R3" gate="G$1" x="66.04" y="68.58" rot="R90"/>
-<instance part="R4" gate="G$1" x="96.52" y="68.58" rot="R90"/>
-<instance part="R5" gate="G$1" x="5.08" y="96.52" rot="R270"/>
+<instance part="R4" gate="G$1" x="116.84" y="68.58" rot="R90"/>
+<instance part="R5" gate="G$1" x="-7.62" y="96.52" rot="R270"/>
 <instance part="R6" gate="G$1" x="35.56" y="96.52" rot="R90"/>
 <instance part="R7" gate="G$1" x="66.04" y="96.52" rot="R90"/>
-<instance part="R8" gate="G$1" x="96.52" y="96.52" rot="R90"/>
-<instance part="P+1" gate="VCC" x="5.08" y="104.14"/>
+<instance part="R8" gate="G$1" x="116.84" y="96.52" rot="R90"/>
+<instance part="P+1" gate="VCC" x="-7.62" y="104.14"/>
 <instance part="P+2" gate="VCC" x="35.56" y="104.14"/>
 <instance part="P+3" gate="VCC" x="66.04" y="104.14"/>
-<instance part="P+4" gate="VCC" x="96.52" y="104.14"/>
-<instance part="SUPPLY1" gate="GND" x="12.7" y="71.12"/>
+<instance part="P+4" gate="VCC" x="116.84" y="104.14"/>
+<instance part="SUPPLY1" gate="GND" x="0" y="71.12"/>
 <instance part="SUPPLY2" gate="GND" x="43.18" y="71.12"/>
 <instance part="SUPPLY3" gate="GND" x="73.66" y="71.12"/>
-<instance part="SUPPLY4" gate="GND" x="104.14" y="71.12"/>
-<instance part="SUPPLY5" gate="GND" x="12.7" y="93.98" rot="R180"/>
+<instance part="SUPPLY4" gate="GND" x="124.46" y="71.12"/>
+<instance part="SUPPLY5" gate="GND" x="0" y="93.98" rot="R180"/>
 <instance part="SUPPLY6" gate="GND" x="43.18" y="93.98" rot="R180"/>
 <instance part="SUPPLY7" gate="GND" x="73.66" y="93.98" rot="R180"/>
-<instance part="SUPPLY8" gate="GND" x="104.14" y="93.98" rot="R180"/>
+<instance part="SUPPLY8" gate="GND" x="124.46" y="93.98" rot="R180"/>
 <instance part="J1" gate="-1" x="-17.78" y="83.82" rot="R270"/>
 <instance part="J1" gate="-2" x="-22.86" y="83.82" rot="R270"/>
-<instance part="J2" gate="-1" x="5.08" y="60.96" rot="R270"/>
+<instance part="J2" gate="-1" x="-7.62" y="60.96" rot="R270"/>
 <instance part="J2" gate="-2" x="35.56" y="60.96" rot="R270"/>
 <instance part="J2" gate="-3" x="66.04" y="60.96" rot="R270"/>
-<instance part="J2" gate="-4" x="96.52" y="60.96" rot="R270"/>
+<instance part="J2" gate="-4" x="116.84" y="60.96" rot="R270"/>
 <instance part="SUPPLY9" gate="GND" x="-17.78" y="88.9" rot="R180"/>
 <instance part="P+5" gate="VCC" x="-22.86" y="88.9"/>
-<instance part="J5" gate="-1" x="7.62" y="91.44"/>
+<instance part="J5" gate="-1" x="-5.08" y="91.44"/>
 <instance part="J5" gate="-2" x="38.1" y="91.44"/>
 <instance part="J5" gate="-3" x="68.58" y="91.44"/>
-<instance part="J5" gate="-4" x="99.06" y="91.44"/>
+<instance part="J5" gate="-4" x="119.38" y="91.44"/>
 <instance part="J3" gate="-1" x="-83.82" y="81.28" rot="R180"/>
 <instance part="J3" gate="-2" x="-83.82" y="86.36" rot="R180"/>
 <instance part="J4" gate="-1" x="-73.66" y="81.28" rot="R180"/>
@@ -4147,6 +4167,12 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="TCS2" gate="G$1" x="-43.18" y="60.96"/>
 <instance part="SUPPLY10" gate="GND" x="-66.04" y="50.8" rot="R270"/>
 <instance part="SUPPLY11" gate="GND" x="-66.04" y="93.98" rot="R270"/>
+<instance part="OS5" gate="OS" x="17.78" y="83.82" rot="MR90"/>
+<instance part="OS6" gate="OS" x="93.98" y="83.82" rot="R90"/>
+<instance part="SUPPLY14" gate="GND" x="99.06" y="71.12"/>
+<instance part="SUPPLY15" gate="GND" x="99.06" y="93.98" rot="R180"/>
+<instance part="SUPPLY16" gate="GND" x="12.7" y="71.12"/>
+<instance part="SUPPLY19" gate="GND" x="12.7" y="93.98" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -4155,18 +4181,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <segment>
 <pinref part="OS1" gate="OS" pin="ANODE"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="OS2" gate="OS" pin="ANODE"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="OS3" gate="OS" pin="ANODE"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4180,23 +4194,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="OS1" gate="OS" pin="COLLECTOR"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="J5" gate="-1" pin="S"/>
-<junction x="5.08" y="91.44"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="OS2" gate="OS" pin="COLLECTOR"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="J5" gate="-2" pin="S"/>
-<junction x="35.56" y="91.44"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="OS3" gate="OS" pin="COLLECTOR"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="J5" gate="-3" pin="S"/>
-<junction x="66.04" y="91.44"/>
+<junction x="-7.62" y="91.44"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4204,14 +4202,14 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="OS4" gate="OS" pin="COLLECTOR"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="J5" gate="-4" pin="S"/>
-<junction x="96.52" y="91.44"/>
+<junction x="116.84" y="91.44"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<junction x="5.08" y="101.6"/>
+<junction x="-7.62" y="101.6"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
@@ -4226,7 +4224,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <segment>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<junction x="96.52" y="101.6"/>
+<junction x="116.84" y="101.6"/>
 </segment>
 <segment>
 <pinref part="J1" gate="-2" pin="S"/>
@@ -4277,6 +4275,22 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <segment>
 <pinref part="J1" gate="-1" pin="S"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="OS6" gate="OS" pin="CATHODE"/>
+<pinref part="SUPPLY14" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="OS6" gate="OS" pin="EMITTER"/>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="OS5" gate="OS" pin="EMITTER"/>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="OS5" gate="OS" pin="CATHODE"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -4344,6 +4358,50 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <wire x1="-81.28" y1="104.14" x2="-63.5" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="88.9" x2="-81.28" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-81.28" y="88.9"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="OS2" gate="OS" pin="ANODE"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<junction x="35.56" y="73.66"/>
+<pinref part="OS5" gate="OS" pin="ANODE"/>
+<wire x1="35.56" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="OS2" gate="OS" pin="COLLECTOR"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="J5" gate="-2" pin="S"/>
+<junction x="35.56" y="91.44"/>
+<pinref part="OS5" gate="OS" pin="COLLECTOR"/>
+<wire x1="35.56" y1="91.44" x2="20.32" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="OS6" gate="OS" pin="ANODE"/>
+<wire x1="91.44" y1="73.66" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="66.04" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="OS3" gate="OS" pin="ANODE"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<junction x="66.04" y="73.66"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="OS6" gate="OS" pin="COLLECTOR"/>
+<wire x1="91.44" y1="91.44" x2="91.44" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="OS3" gate="OS" pin="COLLECTOR"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="J5" gate="-3" pin="S"/>
+<junction x="66.04" y="91.44"/>
+<wire x1="58.42" y1="109.22" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
